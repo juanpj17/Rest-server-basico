@@ -5,7 +5,7 @@ import { router } from '../routes/user.js';
 class Server {
 
     constructor(){
-        this.port = process.env.PORT;
+        this.port = process.env.PORT || 3000;
         this.app = express();
         this.userPath = '/api/user';
 
